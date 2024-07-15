@@ -1,0 +1,15 @@
+#First mounted my google drive with colab
+from google.colab import drive
+drive.mount('/content/gdrive')
+
+#Changed my working directory to TrackEval
+import os
+print(os.getcwd())
+%cd /content/gdrive/MyDrive/TrackEval
+
+# Install the TrackEval library
+!pip install -e .
+
+#Running the run_mot_challenge.py on MOT datasets
+print(os.getcwd())
+!python run_mot_challenge.py --BENCHMARK my --SPLIT_TO_EVAL train --TRACKERS_TO_EVAL mytracker --METRICS HOTA --USE_PARALLEL False --NUM_PARALLEL_CORES 1
