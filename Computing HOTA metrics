@@ -1,4 +1,6 @@
-#First mounted my google drive with colab
+git clone https://github.com/JonathonLuiten/TrackEval.git
+
+#Mounted my google drive with colab to access Trackeval (downloaded the repository)
 from google.colab import drive
 drive.mount('/content/gdrive')
 
