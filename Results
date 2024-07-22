@@ -1,0 +1,90 @@
+Current results-       
+
+Eval Config:
+USE_PARALLEL         : False                         
+NUM_PARALLEL_CORES   : 1                             
+BREAK_ON_ERROR       : True                          
+RETURN_ON_ERROR      : False                         
+LOG_ON_ERROR         : /content/gdrive/MyDrive/TrackEval/error_log.txt
+PRINT_RESULTS        : True                          
+PRINT_ONLY_COMBINED  : False                         
+PRINT_CONFIG         : True                          
+TIME_PROGRESS        : True                          
+DISPLAY_LESS_PROGRESS : False                         
+OUTPUT_SUMMARY       : True                          
+OUTPUT_EMPTY_CLASSES : True                          
+OUTPUT_DETAILED      : True                          
+PLOT_CURVES          : True                          
+
+MotChallenge2DBox Config:
+PRINT_CONFIG         : True                          
+GT_FOLDER            : /content/gdrive/MyDrive/TrackEval/data/gt/mot_challenge/
+TRACKERS_FOLDER      : /content/gdrive/MyDrive/TrackEval/data/trackers/mot_challenge/
+OUTPUT_FOLDER        : None                          
+TRACKERS_TO_EVAL     : ['mytracker']                 
+CLASSES_TO_EVAL      : ['pedestrian']                
+BENCHMARK            : my                            
+SPLIT_TO_EVAL        : train                         
+INPUT_AS_ZIP         : False                         
+DO_PREPROC           : True                          
+TRACKER_SUB_FOLDER   : data                          
+OUTPUT_SUB_FOLDER    :                               
+TRACKER_DISPLAY_NAMES : None                          
+SEQMAP_FOLDER        : None                          
+SEQMAP_FILE          : None                          
+SEQ_INFO             : None                          
+GT_LOC_FORMAT        : {gt_folder}/{seq}/gt/gt.txt   
+SKIP_SPLIT_FOL       : False                         
+
+Identity Config:
+METRICS              : ['HOTA', 'Clear', 'Identity', 'VACE']
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Evaluating 1 tracker(s) on 1 sequence(s) for 1 class(es) on MotChallenge2DBox dataset using the following metrics: HOTA, Identity, VACE, Count
+
+
+Evaluating mytracker
+
+    MotChallenge2DBox.get_raw_seq_data(mytracker, my-01)                   0.5774 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.2405 sec
+    HOTA.eval_sequence()                                                   0.1233 sec
+    Identity.eval_sequence()                                               0.0105 sec
+    VACE.eval_sequence()                                                   0.0180 sec
+    Count.eval_sequence()                                                  0.0000 sec
+1 eval_sequence(my-01, mytracker)                                        0.9730 sec
+
+All sequences for mytracker finished in 0.97 seconds
+
+HOTA: mytracker-pedestrian         HOTA      DetA      AssA      DetRe     DetPr     AssRe     AssPr     LocA      OWTA      HOTA(0)   LocA(0)   HOTALocA(0)
+my-01                              0.24677   0.21442   0.28842   0.23227   2.3559    0.72566   0.47152   78.809    0.25684   2.2918    12.752    0.29226   
+COMBINED                           0.24677   0.21442   0.28842   0.23227   2.3559    0.72566   0.47152   78.809    0.25684   2.2918    12.752    0.29226   
+
+Identity: mytracker-pedestrian     IDF1      IDR       IDP       IDTP      IDFN      IDFP      
+my-01                              0         0         0         0         5325      525       
+COMBINED                           0         0         0         0         5325      525       
+
+VACE: mytracker-pedestrian         SFDA      ATA       
+my-01                              0.61362   0         
+COMBINED                           0.61362   0         
+
+Count: mytracker-pedestrian        Dets      GT_Dets   IDs       GT_IDs    
+my-01                              525       5325      1         26        
+COMBINED                           525       5325      1         26        
+
+Timing analysis:
+MotChallenge2DBox.get_raw_seq_data                                     0.5774 sec
+MotChallenge2DBox.get_preprocessed_seq_data                            0.2405 sec
+HOTA.eval_sequence                                                     0.1233 sec
+Identity.eval_sequence                                                 0.0105 sec
+VACE.eval_sequence                                                     0.0180 sec
+Count.eval_sequence                                                    0.0000 sec
+eval_sequence                                                          0.9730 sec
+Evaluator.evaluate                                                     3.6754 sec
+
+
+Getting 0.24677 score for HOTA metrics currently. Getting score near to 1 are desirable and changes in the code are in process.
+
+
+
+
