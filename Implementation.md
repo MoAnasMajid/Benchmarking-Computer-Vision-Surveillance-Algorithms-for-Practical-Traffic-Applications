@@ -13,13 +13,20 @@ ii. Ground truth annotations: These are text files that provide the true locatio
 For real-time object detection system, I have used YOLO (You Only Look Once) algorithm . It predicts bounding boxes on each person in the frame along with the confidence score which is a estimate probability that the detected object belongs to a certain class (person in our case). Though, YOLO is used for object detection, but it's latest version YOLOv8 allows object tracking.
 
 **Steps-** 
-1.Installing python libraries (ultralytics, opencv) and importing their packages (YOLO, cv2).
-2.Loading the MOT dataset which includes the video file.
-3.Loading the model (yolov8n.pt).
-4.Preprocessing the data to get the video properties.
-5.Creating an annotated txt file to get the data of each detected frame and tracking it across multiple time stamps.
-6.Running model on each frame using while loop.
-7.Saving the annotated file.
+
+-Installing python libraries (ultralytics, opencv) and importing their packages (YOLO, cv2).
+
+-Loading the MOT dataset which includes the video file.
+
+-Loading the model (yolov8n.pt).
+
+-Preprocessing the data to get the video properties.
+
+-Creating an annotated txt file to get the data of each detected frame and tracking it across multiple time stamps.
+
+-Running model on each frame using while loop.
+
+-Saving the annotated file.
 
 **Code-**
 https://github.com/MoAnasMajid/Benchmarking-Computer-Vision-Surveillance-Algorithms-for-Practical-Traffic-Applications/blob/main/Scripts/YOLOv8.py
@@ -29,9 +36,13 @@ https://github.com/MoAnasMajid/Benchmarking-Computer-Vision-Surveillance-Algorit
 HOTA (Higher Order Tracking Accuracy) is a method to evaluate the performance of the object tracking algorithm.
 
 **Steps to compute HOTA metrics-**
+
 -Preparing Evaluation data. Placing the ground truth annotated text file and YOLO model predicted file on the TrackEval's gt and trackers folders.
+
 -Cloning the TrackEval github repository which is an official evaluation kit for MOT datasets.
+
 -Running TrackEval's run_mot_challenge script which can run various benchmarks. 
+
 -Analyzing the results.
 
 **Code-**
