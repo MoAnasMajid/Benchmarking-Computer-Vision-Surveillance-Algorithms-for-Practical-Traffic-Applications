@@ -13,13 +13,13 @@ ii. Ground truth annotations: These are text files that provide the true locatio
 For real-time object detection system, I have used YOLO (You Only Look Once) algorithm . It predicts bounding boxes on each person in the frame along with the confidence score which is a estimate probability that the detected object belongs to a certain class (person in our case). Though, YOLO is used for object detection, but it's latest version YOLOv8 allows object tracking.
 
 **Steps-** 
--Installing python libraries (ultralytics, opencv) and importing their packages (YOLO, cv2).
--Loading the MOT dataset which includes the video file.
--Loading the model (yolov8n.pt).
--Preprocessing the data to get the video properties.
--Creating an annotated txt file to get the data of each detected frame and tracking it across multiple time stamps.
--Running model on each frame using while loop.
--Saving the annotated file.
+1.Installing python libraries (ultralytics, opencv) and importing their packages (YOLO, cv2).
+2.Loading the MOT dataset which includes the video file.
+3.Loading the model (yolov8n.pt).
+4.Preprocessing the data to get the video properties.
+5.Creating an annotated txt file to get the data of each detected frame and tracking it across multiple time stamps.
+6.Running model on each frame using while loop.
+7.Saving the annotated file.
 
 **Code-**
 https://github.com/MoAnasMajid/Benchmarking-Computer-Vision-Surveillance-Algorithms-for-Practical-Traffic-Applications/blob/main/Scripts/YOLOv8.py
