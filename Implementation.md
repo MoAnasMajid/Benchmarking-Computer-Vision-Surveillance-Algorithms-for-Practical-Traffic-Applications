@@ -22,7 +22,7 @@ For real-time object detection system, I have used YOLO (You Only Look Once) alg
 -Saving the annotated file.
 
 **Code-**
-https://github.com/MoAnasMajid/Benchmarking-Computer-Vision-Surveillance-Algorithms-for-Practical-Traffic-Applications/blob/main/YOLOv8%20model
+https://github.com/MoAnasMajid/Benchmarking-Computer-Vision-Surveillance-Algorithms-for-Practical-Traffic-Applications/blob/main/Scripts/YOLOv8.py
 
 ## *Benchmarking-*
 
@@ -35,4 +35,4 @@ HOTA (Higher Order Tracking Accuracy) is a method to evaluate the performance of
 -Analyzing the results.
 
 **Code-**
-https://github.com/MoAnasMajid/Benchmarking-Computer-Vision-Surveillance-Algorithms-for-Practical-Traffic-Applications/blob/main/Computing%20HOTA%20metrics
+https://github.com/MoAnasMajid/Benchmarking-Computer-Vision-Surveillance-Algorithms-for-Practical-Traffic-Applications/blob/main/Scripts/Computing%20HOTA%20metrics.py
