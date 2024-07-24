@@ -8,7 +8,7 @@ i. RAW video: These are sequences of frames where the people need to be detected
 
 ii. Ground truth annotations: These are text files that provide the true locations and identities of people at different time stamps. Each line in these  files typically includes information like frame number, object ID, bounding box coordinates, and more. 
 
-##Object detection and tracking-
+## *Object detection and tracking-*
 
 For real-time object detection system, I have used YOLO (You Only Look Once) algorithm . It predicts bounding boxes on each person in the frame along with the confidence score which is a estimate probability that the detected object belongs to a certain class (person in our case). Though, YOLO is used for object detection, but it's latest version YOLOv8 allows object tracking.
 
@@ -24,7 +24,7 @@ For real-time object detection system, I have used YOLO (You Only Look Once) alg
 **Code-**
 https://github.com/MoAnasMajid/Benchmarking-Computer-Vision-Surveillance-Algorithms-for-Practical-Traffic-Applications/blob/main/YOLOv8%20model
 
-##Benchmarking-
+## *Benchmarking-*
 
 HOTA (Higher Order Tracking Accuracy) is a method to evaluate the performance of the object tracking algorithm.
 
