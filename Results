@@ -46,44 +46,45 @@ Evaluating 1 tracker(s) on 1 sequence(s) for 1 class(es) on MotChallenge2DBox da
 
 Evaluating mytracker
 
-    MotChallenge2DBox.get_raw_seq_data(mytracker, my-01)                   0.5774 sec
-    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.2405 sec
-    HOTA.eval_sequence()                                                   0.1233 sec
-    Identity.eval_sequence()                                               0.0105 sec
-    VACE.eval_sequence()                                                   0.0180 sec
+    MotChallenge2DBox.get_raw_seq_data(mytracker, my-01)                   0.1318 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.2628 sec
+    HOTA.eval_sequence()                                                   0.1484 sec
+    Identity.eval_sequence()                                               0.0125 sec
+    VACE.eval_sequence()                                                   0.0252 sec
     Count.eval_sequence()                                                  0.0000 sec
-1 eval_sequence(my-01, mytracker)                                        0.9730 sec
+1 eval_sequence(my-01, mytracker)                                        0.5840 sec
 
-All sequences for mytracker finished in 0.97 seconds
+All sequences for mytracker finished in 0.58 seconds
 
 HOTA: mytracker-pedestrian         HOTA      DetA      AssA      DetRe     DetPr     AssRe     AssPr     LocA      OWTA      HOTA(0)   LocA(0)   HOTALocA(0)
-my-01                              0.24677   0.21442   0.28842   0.23227   2.3559    0.72566   0.47152   78.809    0.25684   2.2918    12.752    0.29226   
-COMBINED                           0.24677   0.21442   0.28842   0.23227   2.3559    0.72566   0.47152   78.809    0.25684   2.2918    12.752    0.29226   
+my-01                              0.5213    0.4748    0.59092   0.58315   2.1357    0.93907   1.6832    78.736    0.57825   5.1746    11.351    0.58737   
+COMBINED                           0.5213    0.4748    0.59092   0.58315   2.1357    0.93907   1.6832    78.736    0.57825   5.1746    11.351    0.58737   
 
 Identity: mytracker-pedestrian     IDF1      IDR       IDP       IDTP      IDFN      IDFP      
-my-01                              0         0         0         0         5325      525       
-COMBINED                           0         0         0         0         5325      525       
+my-01                              0         0         0         0         5325      1454      
+COMBINED                           0         0         0         0         5325      1454      
 
 VACE: mytracker-pedestrian         SFDA      ATA       
-my-01                              0.61362   0         
-COMBINED                           0.61362   0         
+my-01                              1.2498    0         
+COMBINED                           1.2498    0         
 
 Count: mytracker-pedestrian        Dets      GT_Dets   IDs       GT_IDs    
-my-01                              525       5325      1         26        
-COMBINED                           525       5325      1         26        
+my-01                              1454      5325      23        26        
+COMBINED                           1454      5325      23        26        
 
 Timing analysis:
-MotChallenge2DBox.get_raw_seq_data                                     0.5774 sec
-MotChallenge2DBox.get_preprocessed_seq_data                            0.2405 sec
-HOTA.eval_sequence                                                     0.1233 sec
-Identity.eval_sequence                                                 0.0105 sec
-VACE.eval_sequence                                                     0.0180 sec
+MotChallenge2DBox.get_raw_seq_data                                     0.1318 sec
+MotChallenge2DBox.get_preprocessed_seq_data                            0.2628 sec
+HOTA.eval_sequence                                                     0.1484 sec
+Identity.eval_sequence                                                 0.0125 sec
+VACE.eval_sequence                                                     0.0252 sec
 Count.eval_sequence                                                    0.0000 sec
-eval_sequence                                                          0.9730 sec
-Evaluator.evaluate                                                     3.6754 sec
+eval_sequence                                                          0.5840 sec
+Evaluator.evaluate                                                     2.5053 sec
 
 
-Getting 0.24677 score for HOTA metrics currently. Getting score near to 1 are desirable and changes in the code are in process.
+22nd July 2024 : Getting 0.24677 score for HOTA metrics currently. Getting score near to 1 are desirable and changes in the code are in process.
+24th July 2024 : Getting 0.5213 score for HOTA metrics.
 
 
 
