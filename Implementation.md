@@ -38,17 +38,21 @@ HOTA (Higher Order Tracking Accuracy) is a method to evaluate the performance of
 
 2. If we want to run tracking evaluation on our own data, we need to prepare evaluation data. Broadly, there are two steps:
 
-i. Setup benchmark, i.e., ground-truth tracking
-ii. Add tracker you want to evaluate
+   i. Setup benchmark, i.e., ground-truth tracking
+
+   ii. Add tracker you want to evaluate
 
     ### **A. Setup benchmark-**
     
       i. Ground-truth tracking data is to be placed under TrackEval/data/gt/mot_challenge/<Your_Challenge_Name>. In our case, let’s call the new challenge as ABC-train, i.e., create a 
          directory content/TrackEval/data/gt/mot_challenge/ABC-train/ABC-01/gt.
          
-      ii. Here we need to place two files in the directory- 
-          i. gt.txt (one we dowloaded from the MOT17-09-SDP dataset)
-          ii. seqinfo.ini file with the following contents:
+      ii. Here we need to place two files in the directory-
+
+   i. gt.txt (one we dowloaded from the MOT17-09-SDP dataset)
+
+   ii. seqinfo.ini file with the following contents:
+   
              [Sequence]
              name=ABC
              seqLength= number of frames (eg. 800)
@@ -61,9 +65,9 @@ ii. Add tracker you want to evaluate
       ii. Now in this data folder, we are supposed to place our tracking result (the annotated text file saved after applying YOLO).
 
 
-3. Run Compute HOTA metrics.py.
+4. Run Compute HOTA metrics.py.
 
-4. Analyze the results.
+5. Analyze the results.
 
 ### **Code-**
 
