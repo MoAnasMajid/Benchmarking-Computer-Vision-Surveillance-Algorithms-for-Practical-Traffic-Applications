@@ -44,7 +44,7 @@ HOTA (Higher Order Tracking Accuracy) is a method to evaluate the performance of
 
     ### **A. Setup benchmark-**
     
-      i. Ground-truth tracking data is to be placed under content/TrackEval/data/gt/mot_challenge/<Your_Challenge_Name>. In our case, let’s call the new challenge as ABC-train, i.e.,    
+      i. Ground-truth tracking data is to be placed under content/TrackEval/data/gt/mot_challenge/<Your_Challenge_Name>. In our case, let’s call the new challenge as ABC-train, i.e., 
          create a directory content/TrackEval/data/gt/mot_challenge/ABC-train/ABC-01/gt.
          
       ii. Here we need to place two files in the directory-
@@ -60,7 +60,7 @@ HOTA (Higher Order Tracking Accuracy) is a method to evaluate the performance of
     ### **B. Add tracker you want to evaluate-**
     
       i. Create a directory content/TrackEval/data/trackers/mot_challenge/ABC-train where we will place our tracker outputs. Let’s call this tracker MyTracker. To add this tracker for 
-         evaluation, create TrackEval/data/trackers/mot_challenge/ABC-train/MyTracker/data.
+         evaluation, create content/TrackEval/data/trackers/mot_challenge/ABC-train/MyTracker/data.
     
       ii. Now in this data folder, we are supposed to place our tracking result (the annotated text file saved after applying YOLO).
 
