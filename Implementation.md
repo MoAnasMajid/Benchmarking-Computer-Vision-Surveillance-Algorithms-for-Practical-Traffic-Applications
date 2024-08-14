@@ -38,8 +38,8 @@ HOTA (Higher Order Tracking Accuracy) is a method to evaluate the performance of
 
 2. If we want to run tracking evaluation on our own data, we need to prepare evaluation data. Broadly, there are two steps:
 
-   i. Setup benchmark, i.e., ground-truth tracking
-   ii. Add tracker you want to evaluate
+i. Setup benchmark, i.e., ground-truth tracking
+ii. Add tracker you want to evaluate
 
     ### **A. Setup benchmark-**
     
