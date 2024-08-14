@@ -16,9 +16,10 @@ For real-time object detection system, I have used YOLO (You Only Look Once) alg
 
 1. Installing python libraries (ultralytics, opencv) and importing their packages (YOLO, cv2).
 
-2. Loading the MOT dataset which includes the video file. From (https://motchallenge.net/),I have used MOT17 dataset, in particularly MOT17-09-SDP dataset which includes a short pedestrian street scene filmed along with the gt file. The video was downloaded from here and was provided to the code as an input.  
+2. Loading the MOT dataset which includes the video file. From (https://motchallenge.net) ,I have used MOT17 dataset, in particularly MOT17-09-SDP dataset which includes a short 
+   pedestrian street scene filmed along with the gt file. The video was downloaded from here and was provided to the code as an input.  
 
-3.Running YOLOv8.py to apply object tracking and getting the annotated text file.
+3. Running YOLOv8.py to apply object tracking and getting the annotated text file.
 
 ### **Code-**
 
@@ -38,7 +39,7 @@ HOTA (Higher Order Tracking Accuracy) is a method to evaluate the performance of
    A. Setup benchmark, i.e., ground-truth tracking
    B. Add tracker you want to evaluate
 
-    ### ** A. Setup benchmark-**
+    ### **A. Setup benchmark-*
     
       i. Ground-truth tracking data is to be placed under TrackEval/data/gt/mot_challenge/<Your_Challenge_Name>. In our case, let’s call the new challenge as ABC-train, i.e., create a 
          directory content/TrackEval/data/gt/mot_challenge/ABC-train/ABC-01/gt.
@@ -50,7 +51,7 @@ HOTA (Higher Order Tracking Accuracy) is a method to evaluate the performance of
              name=ABC
              seqLength= number of frames (eg. 800)
     
-    ### ** B. Add tracker you want to evaluate-**
+    ### **B. Add tracker you want to evaluate-**
     
       i. Create a directory content/TrackEval/data/trackers/mot_challenge/ABC-train where we will place our tracker outputs. Let’s call this tracker MyTracker. To add this tracker for 
          evaluation, create TrackEval/data/trackers/mot_challenge/ABC-train/MyTracker/data.
