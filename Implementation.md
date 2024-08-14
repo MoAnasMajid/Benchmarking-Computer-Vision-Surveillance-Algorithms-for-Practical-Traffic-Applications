@@ -38,8 +38,8 @@ HOTA (Higher Order Tracking Accuracy) is a method to evaluate the performance of
 
 2. If we want to run tracking evaluation on our own data, we need to prepare evaluation data. Broadly, there are two steps:
 
-   A. Setup benchmark, i.e., ground-truth tracking
-   B. Add tracker you want to evaluate
+   i. Setup benchmark, i.e., ground-truth tracking
+   ii. Add tracker you want to evaluate
 
     ### **A. Setup benchmark-**
     
@@ -47,8 +47,8 @@ HOTA (Higher Order Tracking Accuracy) is a method to evaluate the performance of
          directory content/TrackEval/data/gt/mot_challenge/ABC-train/ABC-01/gt.
          
       ii. Here we need to place two files in the directory- 
-          A. gt.txt (one we dowloaded from the MOT17-09-SDP dataset)
-          B. seqinfo.ini file with the following contents:
+          i. gt.txt (one we dowloaded from the MOT17-09-SDP dataset)
+          ii. seqinfo.ini file with the following contents:
              [Sequence]
              name=ABC
              seqLength= number of frames (eg. 800)
